@@ -39,9 +39,13 @@ if(confirmNumber) {
         userChoices.concat(special.split(""));
         }
       
-// Get references to the #generate element
-var generateBtn.addEventListener("click") = document.querySelector("#generate");
-
+// Generate PW
+var password ="";
+for (var i = 0; < passwordLenght; i++) {
+  var randomIndex = Math.floor(Math.random() * userChoices.lenght);
+  password += userChoices[randomIndex];
+}
+  
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
