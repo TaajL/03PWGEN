@@ -5,6 +5,10 @@ function generatePassword() {
     alert("Invalid input. Please choose a number between 8 and 128.");
     return generatePassword();
   }
+var lowerCase = 'abcdefghijklmnopqrstuvwxyz';
+var upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var numbers = '0123456789';
+var special = '!@#$%^&*()_+=-[]{};:,.<>?/|';
 }
 
 // Get references to the #generate element
@@ -17,7 +21,7 @@ function writePassword() {
 
   passwordText.value = password;
 
-}
+} 
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
