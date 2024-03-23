@@ -16,6 +16,11 @@ var confirmUpper = confirm('Will this contain upper case letters?');
 var confirmNumber = confirm('Will this contain numbers?');
 var confirmSpecial = confirm('Will this contain special characters?');
 
+if(!confirmLower && !confirmUpper && !confirmNumber && confirmSpecial) {
+  alert('You must choose at least one criteria.');
+  return.generatePassword();
+}
+
 }
 
 // Get references to the #generate element
