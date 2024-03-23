@@ -19,10 +19,26 @@ var confirmSpecial = confirm('Will this contain special characters?');
 if(!confirmLower && !confirmUpper && !confirmNumber && confirmSpecial) {
   alert('You must choose at least one criteria.');
   return.generatePassword();
-}
+  }
 
 }
 
+if(confirmLower) { 
+  userChoices.concat(lowerCase.split(""));
+  }
+  
+if(confirmUpper) { 
+    userChoices.concat(upperCaseCase.split(""));
+    }
+
+if(confirmNumber) { 
+      userChoices.concat(numbers.split(""));
+      }
+
+ if(confirmSpecial) { 
+        userChoices.concat(special.split(""));
+        }
+      
 // Get references to the #generate element
 var generateBtn.addEventListener("click") = document.querySelector("#generate");
 
