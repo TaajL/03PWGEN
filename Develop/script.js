@@ -9,6 +9,13 @@ var lowerCase = 'abcdefghijklmnopqrstuvwxyz';
 var upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var numbers = '0123456789';
 var special = '!@#$%^&*()_+=-[]{};:,.<>?/|';
+
+var userChoices =[];
+var confirmLower = confirm('Will this contain lower case letters?');
+var confirmUpper = confirm('Will this contain upper case letters?');
+var confirmNumber = confirm('Will this contain numbers?');
+var confirmSpecial = confirm('Will this contain special characters?');
+
 }
 
 // Get references to the #generate element
