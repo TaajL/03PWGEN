@@ -18,7 +18,7 @@ function generatePassword() {
 
   if(!confirmLower && !confirmUpper && !confirmNumber && !confirmSpecial) {
   alert('You must choose at least one criteria.');
-  return.generatePassword();
+  return generatePassword();
   }
 }
 
@@ -56,4 +56,5 @@ function writePassword() {
 
 
 // Add event listener to generate button
+var generateBtn = document.getElementById('generate');
 generateBtn.addEventListener("click", writePassword);
