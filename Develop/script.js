@@ -20,7 +20,7 @@ function generatePassword() {
   alert('You must choose at least one criteria.');
   return generatePassword();
   }
-}
+
 
 if (confirmLower) {
   userChoices = userChoices.concat(lowerCase.split(""));
@@ -46,7 +46,7 @@ for (var i = 0; i <  passwordLength; i++) {
 }
 
 return password;
-  
+}
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
