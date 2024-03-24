@@ -1,7 +1,7 @@
 // Assignment code here
 function generatePassword() {
-  var passwordLenght = prompt("Choose as Password lenght between 8 and 128");
-  if(!passwordLenght || passwordLenght < 8 || passwordLenght > 128) {
+  var passwordLength = prompt("Choose as Password lenght between 8 and 128");
+  if(!passwordLength || passwordLength < 8 || passwordLength > 128) {
     alert("Invalid input. Please choose a number between 8 and 128.");
     return generatePassword();
   }
@@ -16,7 +16,7 @@ var confirmUpper = confirm('Will this contain upper case letters?');
 var confirmNumber = confirm('Will this contain numbers?');
 var confirmSpecial = confirm('Will this contain special characters?');
 
-if(!confirmLower && !confirmUpper && !confirmNumber && confirmSpecial) {
+if(!confirmLower && !confirmUpper && !confirmNumber && !confirmSpecial) {
   alert('You must choose at least one criteria.');
   return.generatePassword();
   }
@@ -41,7 +41,7 @@ if(confirmNumber) {
       
 // Generate PW
 var password ="";
-for (var i = 0; < passwordLenght; i++) {
+for (var i = 0; < passwordLength; i++) {
   var randomIndex = Math.floor(Math.random() * userChoices.lenght);
   password += userChoices[randomIndex];
 }
